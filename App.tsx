@@ -1,11 +1,9 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef } from 'react';
 import { PhotoIcon, SparklesIcon, ArrowDownTrayIcon, PaintBrushIcon, ChatBubbleBottomCenterTextIcon, TrashIcon, AdjustmentsHorizontalIcon, LightBulbIcon } from '@heroicons/react/24/solid';
 import MemeCanvas from './components/MemeCanvas';
 import Loader from './components/Loader';
 import { generateMagicCaptions, editImageWithGenAI, generateEditSuggestions } from './services/geminiService';
 import { CaptionSuggestion, EditMode, MemeState } from './types';
-
-const PLACEHOLDER_IMG = "https://picsum.photos/800/600";
 
 const App: React.FC = () => {
   const [memeState, setMemeState] = useState<MemeState>({
