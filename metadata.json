@@ -1,0 +1,5 @@
+{
+  "name": "MemeGen AI",
+  "description": "An intelligent meme generator featuring Magic Captioning and Generative Image Editing using advanced AI models.",
+  "requestFramePermissions": []
+}
